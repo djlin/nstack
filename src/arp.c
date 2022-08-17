@@ -13,6 +13,8 @@
 
 #define ARP_CACHE_AGE_MAX (20 * 60 * 60) /* Expiration time */
 
+const mac_addr_t mac_broadcast_addr = {0xff, 0xff, 0xff, 0xff, 0xff, 0xff};
+
 struct arp_cache_entry {
     in_addr_t ip_addr;
     mac_addr_t haddr;

@@ -5,8 +5,6 @@
 
 SET_DECLARE(_ether_proto_handlers, struct _ether_proto_handler);
 
-const mac_addr_t mac_broadcast_addr = {0xff, 0xff, 0xff, 0xff, 0xff, 0xff};
-
 int ether_input(const struct ether_hdr *hdr, uint8_t *payload, size_t bsize)
 {
     struct _ether_proto_handler **tmpp;
